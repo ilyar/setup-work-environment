@@ -19,7 +19,7 @@ else
 
   # Install Vagrant
   echo "Install Vagrant..."
-  wget -nv --output-document /tmp/vagrant.deb https://dl.bintray.com/mitchellh/vagrant/vagrant_${version}_${arch}.deb
+  wget -nv --output-document /tmp/vagrant.deb https://releases.hashicorp.com/vagrant/${version}/vagrant_${version}_${arch}.deb
   sudo dpkg -i /tmp/vagrant.deb
   rm /tmp/vagrant.deb
   vagrant --version
