@@ -4,6 +4,7 @@
 # TODO uninstall VirtualBox
 
 codename=$(lsb_release --codename | cut -f2)
+scriptPath=${0%/*}
 
 if [ $(which vboxmanage) ];
 then
@@ -18,6 +19,6 @@ else
   wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | sudo apt-key add -
   sudo apt-get update 
   sudo apt-get install -y virtualbox-5.0
-  ./VirtualBox/VirtualBox_extensionPack.sh
+  ${scriptPath}/VirtualBox/VirtualBox_extensionPack.sh
   
 fi
