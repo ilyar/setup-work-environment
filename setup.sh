@@ -6,3 +6,4 @@ scriptPath=${0%/*}
 
 ${scriptPath}/VirtualBox/VirtualBox_install.sh
 ${scriptPath}/Vagrant/Vagrant_install.sh
+${scriptPath}/Ansible/Ansible_install.sh
