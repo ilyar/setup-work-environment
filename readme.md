@@ -1,19 +1,29 @@
-# Setup work environment `draft`
+# Setup work environment
 
 Systematics of experience...
 
-Setup minimal environment for use virtual machines on VirtualBox 5.0 and Vagrant 1.8.1 (plugins: cachier, hostmanager, bindfs)
+Setup 
+
+* VirtualBox 5.0
+* Vagrant 1.8.1 (plugins: cachier, hostmanager, bindfs)
+* Ansible 1.9.4
 
 ## Install
 
-    $ mkdir -p ~/bin/tools && cd $_
-    $ git clone https://github.com/ilyar/setup-work-environment.git --depth 1
-    $ ln $(pwd)/setup-work-environment/run.sh ~/setup-work-environment
+    $ cd ~ && mkdir -p ~/bin/tools
+    $ git clone https://github.com/ilyar/setup-work-environment.git --depth 1 -b stable bin/tools/setup-work-environment
+    $ chmod +x bin/tools/setup-work-environment/setup.sh
 
 ## Update
 
-    $ cd ~/bin/tools/setup-work-environment && git pull
+    $ git -C ~/bin/tools/setup-work-environment pull
     
-# Usage for setup and update
+## Usage
 
-    $ setup-work-environment
+    $ ./bin/tools/setup-work-environment/setup.sh
+
+## Roadmap
+
+* Add update and uninstall actions
+* Use Ansible
+* Add tests
