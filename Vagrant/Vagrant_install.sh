@@ -41,4 +41,6 @@ else
   # Install plugin to automate bindfs mount in the VM https://github.com/gael-ian/vagrant-bindfs
   vagrant plugin install vagrant-bindfs
   
+  # Install plugin Vagrant Host Manager https://github.com/smdahlen/vagrant-hostmanager
+  vagrant plugin install vagrant-hostmanager
 fi
