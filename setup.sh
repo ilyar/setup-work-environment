@@ -10,4 +10,5 @@ ${scriptPath}/Vagrant/Vagrant_install.sh
 
 if [ "$3" == 'all' ]; then
   ${scriptPath}/Ansible/Ansible_install.sh
+  ${scriptPath}/docker/docker_install.sh
 fi

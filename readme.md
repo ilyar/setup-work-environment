@@ -10,6 +10,7 @@ Setup
 ## Optional
 
 * Ansible 1.9.4
+* Docker 1.10.2
 
 ## Install
 
