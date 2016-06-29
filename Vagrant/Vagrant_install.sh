@@ -3,7 +3,7 @@
 # Vagrant
 # TODO uninstall Vagrant
 
-version=${1:-'1.8.1'}
+version=${1:-'1.8.4'}
 arch=$(uname -m)
 
 if [ $(which vagrant) ];
