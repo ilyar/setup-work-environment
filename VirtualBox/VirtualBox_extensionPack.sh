@@ -5,12 +5,12 @@
 
 mode=${1:-'install'}
 
-if [ "$mode" != 'install' ];
+if [ "$mode" == 'install' ];
 then
 
   # Install VirtualBox Oracle VM VirtualBox Extension Pack
   version=$(vboxmanage -v)
-  var1=$(echo ${version} | cut -d 'r' -f 1)
+  var1=$(echo ${version} | cut -d 'r' -f 1 | cut -d '_' -f 1)
   var2=$(echo ${version} | cut -d 'r' -f 2)
   file="Oracle_VM_VirtualBox_Extension_Pack-${var1}-${var2}.vbox-extpack"
   wget http://download.virtualbox.org/virtualbox/${var1}/${file} -O /tmp/${file}
